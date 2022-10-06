@@ -25,19 +25,20 @@ class Play:
         self.__date = date
         self.__status = status
 
-    def getName(self):
+
+    def get_name(self):
         return self.__name
     
-    def getSeats(self):
+    def get_seats(self):
         return self.__seats
     
-    def getStatus(self):
+    def get_status(self):
         return self.__status
 
-    def getSeatsLeft(self):
+    def seats_left(self):
         self.__seats -= 1
     
-    def setStatus(self):
+    def set_status(self):
         self.__status = False
 
 
@@ -46,8 +47,8 @@ class Booking:
         self.__name = name
         self.__seatNum = seatNum
 
-    def getName(self):
+    def get_name(self):
         return self.__name
     
-    def getSeatNum(self):
+    def get_seatNum(self):
         return self.__seatNum
